@@ -36,14 +36,14 @@ import bpy
 
 #local imports
 
-from .cubeExploder19 import OBJECT_OT_cube_setup_operator
-from .cubeExploder19 import OBJECT_OT_cube_exploder_operator
+from .cubeExploder import OBJECT_OT_cube_setup_operator
+from .cubeExploder import OBJECT_OT_cube_exploder_operator
 
-from .playOnce19 import PLAYONCE_OT_remove_play_once_operator
-from .playOnce19 import PLAYONCE_OT_play_once_operator
+from .playOnce import PLAYONCE_OT_remove_play_once_operator
+from .playOnce import PLAYONCE_OT_play_once_operator
 
-from .loadSounds19 import SEQUENCE_EDITOR_OT_load_Sounds_operator
-from .loadSounds19 import SEQUENCE_EDITOR_OT_unload_Sounds_operator
+from .loadSounds import SEQUENCE_EDITOR_OT_load_Sounds_operator
+from .loadSounds import SEQUENCE_EDITOR_OT_unload_Sounds_operator
 
 
 
