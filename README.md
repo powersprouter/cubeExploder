@@ -4,7 +4,7 @@
 Pretty much every single Blender tutorial I have ever watched begins with the instructor deleting the default cube. I mean,
 almost every single one!! So why do we have this default? Why not a default with no cube?
 
-This just makes me laugh. And then it hit me - - - rather than a simple _Select All_ > _x-then-press-delete_, what is really called for is BLOWING THIS SHIT UP. I mean, seriously folks. The cube MUST go KABOOOOOOOOOOOOOM!!!
+This just makes me laugh. And then it hit me - - - rather than a simple _Select All_ > _x_ > _delete_, what is really called for is BLOWING THIS SHIT UP. I mean, seriously folks. The cube MUST go KABOOOOOOOOOOOOOM!!!
 
 And so, cubeExploder was born.
 
