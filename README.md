@@ -12,7 +12,7 @@ I mean, seriously folks. The cube MUST go ***KABOOOOOOOOOOOOOM!!!***
 
 And so, cubeExploder was born.
 
-There is something strangely satisfying about this. Install this add-on into your Viewport N-panel, press the big button, and you will immediately know what I mean. It's not quite ASMR but there is 
+There is something strangely satisfying about this. Download the zip file to install this add-on into your Viewport N-panel, press the Big Button, and you will immediately know what I mean. It's not quite ASMR but there is 
 something similar about this that I can't quite put my finger on.
 
 But regardless. PRESS THE BIG BUTTON! You will see. 
