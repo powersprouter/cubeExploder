@@ -21,8 +21,8 @@ Anyway I hope you enjoy this free add-on, complete with three explosions include
 been thinking about making more Extreme explosions in future versions, maybe a Monty Python foot stomping it to a pancake, or perhaps
 the default cube being washed away in a massive tsunami? I dunno. Do you have ideas? Send me them!
 
-Or better yet - if you are so bold and skilled - send me your own cube destruction! If you send to me as a geometry node or some other procedural list
-that I can throw into the add-on python codebase _(and if you meet cubeExploder's High Standards For Excellence)_, I will gladly give you full credit,
+Or better yet - if you are so bold and skilled - send me your own cube destruction! If you send to me as a geometry node, python script, or some other procedural list
+that I can throw into this add-on's python codebase _(and if you meet cubeExploder's High Standards For Excellence)_, I will gladly give you full credit,
 a personal email of thanks, and you will be revered and appreciated by future cube exploder-ers worldwide, the envy of millions. Maybe someday we
 will even have cubeExploder stickers that proudly proclaim "I am a Cube Exploder!"  Yay!  :D
 
