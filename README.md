@@ -12,16 +12,18 @@ I mean, seriously folks. The cube MUST go ***KABOOOOOOOOOOOOOM!!!***
 
 And so, cubeExploder was born.
 
-There is something strangely satisfying about this. Press the big button and enjoy. It's not quite ASMR but there is 
-something similar I can't quite put my finger on.
+There is something strangely satisfying about this. Install this add-on into your Viewport N-panel, press the big button, and you will immediately know what I mean. It's not quite ASMR but there is 
+something similar about this that I can't quite put my finger on.
 
-Anyway I hope you enjoy this free add-on, complete with three explosions included for your exploding pleasure. I have
-been thinking about making more extreme explosions in future versions, maybe a Monty Python foot stomping it to a pancake, or perhaps
-the default cube being washed away in a massive tsunami. I dunno. Do you have ideas? Send me them!
+But regardless. PRESS THE BIG BUTTON! You will see. 
 
-Or better yet - send me your own cube destruction! If you send as a geometry node or some other procedural list that I can throw
-into the add-on python codebase _(and if you meet cubeExploder's High Standards For Excellence)_, I will give you full credit, a personal
-thank you, and you will be revered and appreciated by future cube exploder-ers worldwide, the envy of millions. Maybe someday we
+Anyway I hope you enjoy this free add-on, complete with three explosions included in the Advanced Settings for your exploding pleasure. I have
+been thinking about making more Extreme explosions in future versions, maybe a Monty Python foot stomping it to a pancake, or perhaps
+the default cube being washed away in a massive tsunami? I dunno. Do you have ideas? Send me them!
+
+Or better yet - if you are so bold and skilled - send me your own cube destruction! If you send to me as a geometry node or some other procedural list
+that I can throw into the add-on python codebase _(and if you meet cubeExploder's High Standards For Excellence)_, I will gladly give you full credit,
+a personal email of thanks, and you will be revered and appreciated by future cube exploder-ers worldwide, the envy of millions. Maybe someday we
 will even have cubeExploder stickers! :D
 
 Enjoy
