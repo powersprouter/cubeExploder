@@ -2,7 +2,7 @@
 ## _ka-boom!!_
 
 Pretty much every single Blender tutorial I have ever watched begins with the instructor deleting the default cube. I mean,
-almost every single one!! So why do we have this default? Why not a default with no cube?
+almost every. single. one. So why do we even have this default cube to begin with? Why not a default scene setup with no cube?
 
 This just makes me laugh. And then it hit me - - - rather than a simple _Select All_ > _x_ > _delete_, what is really called for is 
 
