@@ -4,6 +4,8 @@ import random
 import math
 from math import radians
 
+#scene = bpy.data.scenes['Scene']
+#frame_end = bpy.data.scenes['Scene'].frame_end 
 
 def selectOBJ(objectname):
     '''select object by name'''
@@ -27,7 +29,7 @@ def delete_object(objectname):
         OBJ = bpy.data.objects[objectname]
         bpy.data.objects.remove(OBJ, do_unlink=True)
         print(objectname, "removed.")
-           
+
         #now purge all datablocks   
         bpy.ops.outliner.orphans_purge(do_local_ids=True, do_linked_ids=True, do_recursive=True)
         
@@ -35,31 +37,30 @@ def delete_object(objectname):
         print ("there is no ", objectname)
 
 
-def cube_explode_play_once(scene):
-    scene = bpy.data.scenes['Scene']
-    frame_end = bpy.data.scenes['Scene'].frame_end    
-   
-    if scene.frame_current == frame_end:
-        bpy.ops.screen.animation_cancel(restore_frame=False)
-        remove_cube_explode_play_once(scene)
-        
-        bpy.ops.object.unload_sounds_operator()
 
-        delete_object("DupeCube")
-        bpy.ops.screen.frame_jump(end=False)
-        delete_object("Cube")
-        
-        if bpy.context.scene.obj_type == '2':
-            for ob in bpy.context.scene.objects:
-                if ob.name.startswith("Empty"):
-                    objectname = ob.name
-                    delete_object(objectname)
-            bpy.context.space_data.overlay.show_relationship_lines = True
 
-def remove_cube_explode_play_once(scene):
-    for h in bpy.app.handlers.frame_change_pre:
-        if h.__name__ == 'cube_explode_play_once':
-            bpy.app.handlers.frame_change_pre.remove(h)
+def remove_detritus():
+
+    bpy.ops.object.unload_sounds_operator()
+    delete_object("Camera")
+    delete_object("Light")
+    delete_object("DupeCube")
+    bpy.ops.screen.frame_jump(end=False)
+    delete_object("Cube")
+
+    if bpy.context.scene.obj_type == '2':
+        for ob in bpy.context.scene.objects:
+            if ob.name.startswith("Empty"):
+                objectname = ob.name
+                delete_object(objectname)
+        bpy.context.space_data.overlay.show_relationship_lines = True
+
+    # Manually add undo here
+    bpy.ops.ed.undo_push()
+    print("undo thing done")
+
+
+
 
             
             
@@ -156,7 +157,7 @@ def make_cube_roll():
     cube.location.x = 1
     cube.location.y = 1
     cube.location.z = 1
-#    #parent cube to the last empty
+    #parent cube to the last empty
     #cube.parent = empty
     parenting(cube,empty,keep_transform = True)
     
@@ -312,7 +313,7 @@ def annihilate_setup():
 
         #make it start running
         make_cube_roll()
-              
+
         #make default cube active object
         selectOBJ("Cube")
 
@@ -366,7 +367,20 @@ def annihilate_setup():
 
         bpy.ops.screen.frame_jump(end=False)
 
-          
+
+class OBJECT_OT_cube_remove_detritus_operator(bpy.types.Operator):
+    """cleans up after explosion"""
+    bl_idname = "object.cube_remove_detritus_operator"
+    bl_label = "cleans up after explosion"
+    #bl_options = {'REGISTER', 'UNDO'}
+    
+    def execute(self, context):
+
+        remove_detritus()
+
+        return {'FINISHED'}
+    
+
 class OBJECT_OT_cube_setup_operator(bpy.types.Operator):
     """sets up the default cube to be explodable"""
     bl_idname = "object.cube_setup_operator"
@@ -397,14 +411,7 @@ class OBJECT_OT_cube_exploder_operator(bpy.types.Operator):
         
         bpy.ops.object.cube_setup_operator()
         bpy.ops.object.load_sounds_operator()
-           
-        if bpy.context.scene.play_once_prop:
-            bpy.app.handlers.frame_change_pre.append(cube_explode_play_once)
-            bpy.ops.screen.frame_jump(end=False)
-            bpy.ops.screen.animation_play()
+        bpy.ops.screen.frame_jump(end=False)
+        bpy.ops.screen.animation_play()
 
-        
-        else:
-            bpy.ops.screen.animation_play()    
-       
         return {'FINISHED'}
