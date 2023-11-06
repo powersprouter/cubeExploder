@@ -1,5 +1,5 @@
 # cubeExploder
-## _ka-boom!!_
+![cubeExploderBanner](https://github.com/powersprouter/cubeExploder/assets/96590051/89115940-7552-4cb9-a55c-bb28b06bb312)
 
 Pretty much every single Blender tutorial I have ever watched begins with the instructor deleting the default cube. I mean,
 almost every. single. one. So why do we even have this default cube to begin with? Why not a default scene setup with no cube?
