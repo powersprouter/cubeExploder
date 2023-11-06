@@ -20,7 +20,8 @@ been thinking about making more extreme explosions in future versions, maybe a M
 the default cube being washed away in a massive tsunami. I dunno. Do you have ideas? Send me them!
 
 Or better yet - send me your own cube destruction! If you send as a geometry node or some other procedural list that I can throw
-into the add-on python codebase _(and if you meet cubeExploder's High Standards For Excellence)_, I will give you full credit, thanks,
-and you will be revered and appreciated by future cube exploder-ers worldwide, the envy of millions.
+into the add-on python codebase _(and if you meet cubeExploder's High Standards For Excellence)_, I will give you full credit, a personal
+thank you, and you will be revered and appreciated by future cube exploder-ers worldwide, the envy of millions. Maybe someday we
+will even have cubeExploder stickers! :D
 
 Enjoy
