@@ -1,3 +1,10 @@
+# mine
+.DS_Store
+.__pycache__
+
+
+
+
 # Logs
 logs
 *.log
